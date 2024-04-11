@@ -85,7 +85,8 @@
         <div class="my-5 w-80">
             <x-input-label :value="__('Imagen Actual')" />
 
-            <img src="{{ asset('storage/vacantes') . '/' . $imagen }}" alt="Imagen Vacante {{ $titulo }}">
+            <img src="{{ env('CLOUDFLARE_R2_URL') . '/' . env('CLOUDFLARE_R2_BUCKET') . '/vacantes/' . $imagen }}"
+                alt="Imagen Vacante {{ $titulo }}">
         </div>
 
         <div class="my-5 w-80">
