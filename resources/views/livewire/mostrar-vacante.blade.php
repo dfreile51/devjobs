@@ -21,7 +21,7 @@
 
     <div class="md:grid md:grid-cols-6 md:gap-4">
         <div class="md:col-span-2">
-            <img src="{{ env('CLOUDFLARE_R2_URL') . '/devjobsdev/vacantes/' . $vacante->imagen }}"
+            <img src="{{ env('CLOUDFLARE_R2_URL') . '/' . env('CLOUDFLARE_R2_BUCKET') . '/vacantes/' . $vacante->imagen }}"
                 alt="Imagen vacante {{ $vacante->titulo }}">
         </div>
         <div class="md:col-span-4 md:mt-0 mt-4">

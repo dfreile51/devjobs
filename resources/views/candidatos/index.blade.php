@@ -25,7 +25,7 @@
 
                                     <div>
                                         <a class="inline-flex items-center shadow-sm px-2.5 py-0.5 border border-gray-300 text-sm leading-5 font-medium rounded-full text-gray-700 bg-white hover:bg-gray-50 transition"
-                                            href="{{ env('CLOUDFLARE_R2_URL') . '/devjobsdev/cv/' . $candidato->cv }}" target="_blank"
+                                            href="{{ env('CLOUDFLARE_R2_URL') . '/' . env('CLOUDFLARE_R2_BUCKET') . '/cv/' . $candidato->cv }}" target="_blank"
                                             rel="noopener noreferrer">Ver CV</a>
                                     </div>
                                 </li>
